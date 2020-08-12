@@ -1,0 +1,50 @@
+$basic-margin: 32px;
+$basic-padding: 24px;
+$padding-basic: 24px;
+$padding-large: 32px;
+
+$font-size-content: 16px;
+$font-size-title: 24px;
+
+// $color-primary: #021b79;
+$color-primary:#330867;
+$color-primary-light: rgba(255, 255, 255, 0.1);
+$color-primary-dark: #2c2ade;
+$color-second: #f8c255;
+// $color-background: linear-gradient(90deg, #0575e6, #021b79);
+$color-background:linear-gradient(150deg, #0C3957, #0B6674);
+$color-font: #ebeef5;
+$color-font-light: #cbced5;
+$color-background-card: rgba(255, 255, 255, 0.15);
+$color-grey-1: #ebeef5;
+
+$color-error: #ff3366;
+$color-warning: #e6a23c;
+$color-success: #67c23a;
+
+$deepBlue: #1d5198;
+$blue: #2d71b8;
+$grey: #dde1e8;
+
+$shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
+$border: 1px solid $color-font-light;
+$trans: 0.3s ease 0s;
+$border-radius: 4px;
+
+$main-btn: rgba(20, 40, 110, 1);
+
+// $max-width: 1440px;
+$max-width: 1000px;
+$xs: 440px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+/* 4c4afe 3333f8
+Mixin
+*/
+@mixin responsive($screen) {
+  @media screen and(max-width:#{$screen}) {
+    @content;
+  }
+}
